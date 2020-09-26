@@ -98,8 +98,18 @@ namespace DynamicElementForAccordionControlInWinForm
                 return;
             if (e.Element.Tag == null)
                 return;
+            if (e.Element.Name.ToString() == "Cihaz Listesi")
+            {
+                fluentDesignFormContainer1.Controls.Clear();
+                fluentDesignFormContainer1.Controls.Add(new UcDeviceList() { Dock = DockStyle.Fill });
+            }
 
-            MessageBox.Show(e.Element.Name.ToString() + "'e tıkladınız! ", "İşlem Başarılı!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (e.Element.Name.ToString() == "Geçiş Olay Verileri")
+            {
+                fluentDesignFormContainer1.Controls.Clear();
+                fluentDesignFormContainer1.Controls.Add(new UcAccessEventData() { Dock = DockStyle.Fill });
+            }
+            //MessageBox.Show(e.Element.Name.ToString() + "'e tıkladınız! ", "İşlem Başarılı!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         #endregion Methods

@@ -60,9 +60,22 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UcAccessEventData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcAccessEventData.Designer.cs">
+      <DependentUpon>UcAccessEventData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcDeviceList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcDeviceList.Designer.cs">
+      <DependentUpon>UcDeviceList.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FluentDesignForm1.resx">
       <DependentUpon>FluentDesignForm1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -73,6 +86,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UcAccessEventData.resx">
+      <DependentUpon>UcAccessEventData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcDeviceList.resx">
+      <DependentUpon>UcDeviceList.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
